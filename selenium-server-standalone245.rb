@@ -4,8 +4,8 @@ class SeleniumServerStandalone < Formula
   sha1 "9bc872d1f364a3104257b1f8e055a342228259c3"
 
   def install
-    libexec.install "selenium-server-standalone-#{version}.jar"
-    bin.write_jar_script libexec/"selenium-server-standalone-#{version}.jar", "selenium-server"
+    libexec.install "selenium-server-standalone-2.45.0.jar"
+    bin.write_jar_script libexec/"selenium-server-standalone-2.45.0.jar", "selenium-server"
   end
 
   plist_options :manual => "selenium-server -p 4444"
@@ -25,7 +25,7 @@ class SeleniumServerStandalone < Formula
       <array>
         <string>/usr/bin/java</string>
         <string>-jar</string>
-        <string>#{libexec}/selenium-server-standalone-#{version}.jar</string>
+        <string>#{libexec}/selenium-server-standalone-2.45.0.jar</string>
         <string>-port</string>
         <string>4444</string>
       </array>
