@@ -41,4 +41,9 @@ class SeleniumServerStandalone245 < Formula
     </plist>
   EOS
   end
+
+  test do
+    system "#{bin}/selenium-server", "-v"
+  end
 end
+
