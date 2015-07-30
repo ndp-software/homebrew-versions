@@ -1,7 +1,7 @@
 class SeleniumServerStandalone245 < Formula
   homepage "http://seleniumhq.org/"
   url "http://selenium-release.storage.googleapis.com/2.45/selenium-server-standalone-2.45.0.jar"
-  sha1 "9bc872d1f364a3104257b1f8e055a342228259c3"
+  sha256 "1172dfa2d94b43bcbcd9e85c824fd714f2d1ed411b6919a22e7338879fad757b"
 
   def install
     libexec.install "selenium-server-standalone-2.45.0.jar"
