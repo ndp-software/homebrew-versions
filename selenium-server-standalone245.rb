@@ -12,8 +12,8 @@ class SeleniumServerStandalone245 < Formula
   end
 
   plist_options :manual => "selenium-server -p 4444"
-  
-  test do 
+
+  test do
     # This package provides a script that doesn't have good testing options beyond running selenium.
   end
 
