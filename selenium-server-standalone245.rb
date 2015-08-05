@@ -12,6 +12,10 @@ class SeleniumServerStandalone245 < Formula
   end
 
   plist_options :manual => "selenium-server -p 4444"
+  
+  test do 
+    # This package provides a script that doesn't have good testing options beyond running selenium.
+  end
 
   def plist; <<-EOS.undent
     <?xml version="1.0" encoding="UTF-8"?>
@@ -42,5 +46,4 @@ class SeleniumServerStandalone245 < Formula
     </plist>
   EOS
   end
-
 end
